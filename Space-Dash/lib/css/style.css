@@ -1,0 +1,75 @@
+body {
+  font-family: 'Righteous', cursive;
+}
+
+@media screen and (min-width: 800px) {
+
+  .flex-hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    color: white;
+    z-index: 10;
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slideUp 1s forwards;
+  }
+
+  .hero-text h1 {
+    font-size: 8rem;
+    color: #fd852f;
+    -webkit-text-stroke: 1px white;
+    text-shadow: 3px 3px 0;
+    margin-bottom: 20px;
+  }
+
+  @keyframes slideUp {
+    100% {
+      opacity: 1;
+      margin-top: -40px;
+    }
+  }  
+
+  .btn {
+    background-color: #b954e2;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 2rem;
+    border-radius: 5px;
+    display: inline-block;
+    -webkit-box-shadow:    0 8px 0 #6a0d91, 0 15px 20px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 8px 0 #6a0d91, 0 15px 20px rgba(0, 0, 0, .35);
+    box-shadow: 0 8px 0 #6a0d91, 0 15px 20px rgba(0, 0, 0, .35);
+  }
+
+  .button:active {
+    -webkit-transform: translate(0, 4px);
+    -moz-transform: translate(0, 4px);
+    -o-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+  }
+
+  footer {
+    background-color: #014552;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  footer a {
+    color: white;
+  }
+}

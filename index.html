@@ -11,10 +11,19 @@
 </head>
 <body>
 
-  <section class="flex-hero" style="background-image: url(lib/img/hero.jpg);">
-    <div class="hero-text">
+  <section id="splash-screen" class="splash-screen" style="background-image: url(lib/img/hero.jpg);">
+    <div class="splash-text">
       <h1>Space Dash</h1>
-      <a href="#work" class='btn'>New Game</a>
+      <a id="new-game" href="#" class='btn'>New Game</a>
+    </div>
+  </section>
+
+  <section id="game-screen" class="splash-screen hidden ghost" style="background-image: url(lib/img/background.jpg);">
+    <div class="overlay">
+      <h2 class="game-text"></h2>
+      <p class="choose-ship hidden">Choose Your SpaceShip</p>
+      <div class="display-cards">
+      </div>
     </div>
   </section>
 
@@ -34,6 +43,7 @@
 
   <script src="lib/js/deck.js"></script>
   <script src="lib/js/ships.js"></script>
-  <script src="lib/js/script.js"></script>
+  <script src="lib/js/dom.js"></script>
+  <!-- <script src="lib/js/script.js"></script> -->
 </body>
 </html>

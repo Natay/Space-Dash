@@ -1,10 +1,13 @@
 body {
   font-family: 'Righteous', cursive;
+  background-color: #00031B;
 }
 
 @media screen and (min-width: 800px) {
 
-  .flex-hero {
+  /* SPLASH SCREEN STUFF */
+
+  .splash-screen {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -13,9 +16,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: all 1s ease;
   }
 
-  .hero-text {
+  .splash-text {
     text-align: center;
     color: white;
     z-index: 10;
@@ -24,7 +28,7 @@ body {
     animation: 1s slideUp 1s forwards;
   }
 
-  .hero-text h1 {
+  .splash-text h1 {
     font-size: 8rem;
     color: #fd852f;
     -webkit-text-stroke: 1px white;
@@ -59,6 +63,54 @@ body {
     transform: translate(0, 4px);
   }
 
+  /* GAME SCREEN STUFF */
+
+  #game-screen {
+    transition: all 1s linear;
+  }
+
+  .overlay {
+    background-color: rgba(255,255,255,.85);
+    width: 70vw;
+    height: 75vh;
+    border-radius: 20px;
+    box-shadow: 0px 6px 20px 7px rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 32);
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .overlay h2 {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  .overlay p {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .spaceship {
+    width: 200px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: rgb(161, 161, 161);
+    display: inline-block;
+    margin: 20px;
+    transition: transform .4s;
+    cursor: pointer;
+  }
+
+  .spaceship:hover {
+    transform: scale(1.2);
+  }
+
+
+  /* FOOTER/ MISC */
+
   footer {
     background-color: #014552;
     color: white;
@@ -71,5 +123,13 @@ body {
 
   footer a {
     color: white;
+  }
+
+  .ghost {
+    opacity: 0;
+  }
+
+  .hidden {
+    display: none;
   }
 }

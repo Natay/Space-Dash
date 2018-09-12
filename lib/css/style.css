@@ -81,6 +81,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px;
+    position: relative;
   }
 
   .overlay h2 {
@@ -108,6 +109,59 @@ body {
     transform: scale(1.2);
   }
 
+  .spaceship-avatar {
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(161, 161, 161);
+    display: inline-block;
+    margin: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .spaceship-avatar-2 {
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(161, 161, 161);
+    display: inline-block;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .spaceship-overlay-one {
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(253, 133, 47, .5);
+    display: inline-block;
+    margin: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    z-index: 40;
+  }
+
+  .spaceship-overlay-two {
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgba(253, 133, 47, .5);
+    display: inline-block;
+    margin: 10px;
+    position: absolute;
+    z-index: 40;
+    right: 0;
+    bottom: calc(100% - 160px);
+  }
 
   /* FOOTER/ MISC */
 

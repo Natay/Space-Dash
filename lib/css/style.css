@@ -96,8 +96,8 @@ body {
   }
 
   .spaceship {
-    width: 200px;
-    height: 250px;
+    width: 180px;
+    height: 230px;
     border-radius: 30px;
     background-color: rgba(255, 177, 1, 0.42);
     display: inline-block;
@@ -183,11 +183,11 @@ body {
     position: absolute;
     top: 40%;
     left: 5%;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     cursor: pointer;
     transition: transform .3s;
-    padding: 30px 15px;
+    padding: 25px 10px;
     background-color: #730f9e;
     box-shadow: 1px 1px 7px 0px grey;
   }
@@ -197,8 +197,8 @@ body {
   }
 
   .card {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     cursor: pointer;
     transition: transform .3s;
     padding: 30px 15px;

@@ -310,5 +310,18 @@ body {
     text-align: center;
     min-height: 104px;
   }
+
+  .spaceship {
+    width: 130px;
+    height: 180px;
+    border-radius: 30px;
+    background-color: rgba(255, 177, 1, 0.42);
+    display: inline-block;
+    margin: 20px;
+    transition: transform .2s;
+    cursor: pointer;
+    border: 3px solid #97640559;
+  }
+
 }
 

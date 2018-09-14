@@ -202,7 +202,7 @@ body {
     cursor: pointer;
     transition: transform .3s;
     padding: 30px 15px;
-    margin: 10px;
+    margin: 5px;
     background-color: #730f9e;
     box-shadow: 1px 1px 7px 0px grey;
   }
@@ -231,6 +231,19 @@ body {
     top: 2%;
     left: 5%;
   }
+
+  .graveyard-card {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    height: 100px;
+    width: 100px;
+    padding: 30px 15px;
+    background-color: #730f9e;
+    box-shadow: 1px 1px 7px 0px grey;
+    pointer-events: none;
+  }
+
 
   /* FOOTER/ MISC */
 
